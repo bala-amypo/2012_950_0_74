@@ -17,5 +17,12 @@ public void setname(String name){
 public float getcgpa(){
     return cgpa;
 }
-
+public void setcgpa(float cgpa){
+    this.cgpa=cgpa;
+}
+public student(int Id,String name,float cgpa){
+    this.Id=Id;
+    this.name=name;
+    this.cgpa=cgpa;
+}
 }
