@@ -1,28 +1,29 @@
+import jakarta.persistence.*;
+
 public class student{
-    private int id;
+    @ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private INTEGER id;
     private String name;
-    private float cgpa;
-public int getId(){
-    return id;
-}
-public void setId(int Id){
-    thid.Id=Id;
-}
-public String getname(){
-    return name;
-}
-public void setname(String name){
-    this.name=name;
-}
-public float getcgpa(){
-    return cgpa;
-}
-public void setcgpa(float cgpa){
-    this.cgpa=cgpa;
-}
-public student(int Id,String name,float cgpa){
-    this.Id=Id;
-    this.name=name;
-    this.cgpa=cgpa;
-}
+    private String email;
+
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setId(int id){
+        this.id=id;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+
 }
